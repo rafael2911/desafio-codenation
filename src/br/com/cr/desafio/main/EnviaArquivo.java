@@ -18,28 +18,6 @@ import org.apache.http.util.EntityUtils;
 public class EnviaArquivo {
 	public static void main(String[] args) throws ClientProtocolException, IOException {
 		
-//		File file = new File("answer.json");
-//	    
-//		HttpClient httpClient = HttpClients.createDefault();
-//		
-//		HttpPost httppost = new HttpPost("https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=e5643667cacd78d26f042710b744c161d9e5a2d8");
-//		
-//		FileBody fileBody = new FileBody(file, ContentType.DEFAULT_BINARY);
-//
-//		// 
-//		MultipartEntityBuilder builder = MultipartEntityBuilder.create();
-//		builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
-//		builder.addPart("upfile", fileBody);
-//		HttpEntity entity = builder.build();
-//		//
-//		httppost.setEntity(entity);
-//		HttpResponse response = httpClient.execute(httppost);
-//		
-//		System.out.println(response);
-		
-		
-		
-		
 		CloseableHttpClient httpclient = HttpClients.createDefault();
         try {
             HttpPost httppost = new HttpPost("https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=e5643667cacd78d26f042710b744c161d9e5a2d8");
